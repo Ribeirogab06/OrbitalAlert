@@ -1,98 +1,81 @@
-<!-- Define que este documento é HTML5 -->
-<!DOCTYPE html>
-<!-- Início do HTML em português -->
+<!doctype html>
 <html lang="pt-br">
-<!-- Cabeçalho técnico da página -->
-<head>
-  <!-- Codificação de caracteres (acentos) -->
-  <meta charset="UTF-8">
-  <!-- Responsividade para diferentes telas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Título da aba do navegador -->
-  <title>OrbitAlert - Sobre</title>
-  <!-- Liga a folha de estilo externa -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<!-- Corpo visível da página -->
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrbitAlert - Sobre</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topo">
+        <div class="logo">
+          <img
+            src="./img/pngtree-space-satellite-broadcast-png-image_14661549.png"
+            alt="Logo OrbitAlert"
+          />
+          <span>OrbitAlert</span>
+        </div>
+        <button class="botao-menu" id="botaoMenu">&#9776;</button>
+        <nav>
+          <ul id="menuLista">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="monitoramento.html">Monitoramento</a></li>
+            <li><a href="alertas.html">Alertas</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Cabeçalho com logo e menu (igual em todas as páginas) -->
-  <header>
-    <!-- Caixa que organiza logo e menu -->
-    <div class="topo">
-      <!-- Logotipo -->
-      <div class="logo">
-  <img src="./img/pngtree-space-satellite-broadcast-png-image_14661549.png" alt="Logo OrbitAlert">
-  <span>OrbitAlert</span>
-</div>
-      <!-- Botão do menu para celular -->
-      <button class="botao-menu" id="botaoMenu">&#9776;</button>
-      <!-- Navegação -->
-      <nav>
-        <!-- Lista de links do menu -->
-        <ul id="menuLista">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="monitoramento.html">Monitoramento</a></li>
-          <li><a href="alertas.html">Alertas</a></li>
-          <li><a href="integrantes.html">Integrantes</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contato.html">Contato</a></li>
+    <main class="container">
+      <section>
+        <h1>Sobre o projeto</h1>
+        <p>
+          Esta página explica o propósito, o problema e as tecnologias usadas no
+          OrbitAlert.
+        </p>
+      </section>
+
+      <section class="caixa">
+        <h2>O problema</h2>
+        <p>
+          O Brasil enfrenta queimadas, desmatamento, inundações e secas que
+          muitas vezes são identificados tarde demais. A falta de alertas
+          rápidos dificulta a resposta de municípios, produtores rurais e órgãos
+          públicos.
+        </p>
+      </section>
+
+      <section class="caixa">
+        <h2>Motivação</h2>
+        <p>
+          Já existem dados abertos e gratuitos de satélites (NASA, ESA e INPE).
+          A ideia do OrbitAlert é organizar esses dados em um só lugar e
+          transformá-los em alertas fáceis de entender.
+        </p>
+      </section>
+
+      <section class="caixa">
+        <h2>Tecnologias utilizadas</h2>
+        <ul>
+          <li>HTML5 para a estrutura das páginas</li>
+          <li>CSS3 para o visual e a responsividade</li>
+          <li>
+            JavaScript para o menu, o filtro de alertas e a validação do
+            formulário
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </section>
+    </main>
 
-  <!-- Conteúdo principal -->
-  <main class="container">
-    <!-- Seção com o título da página -->
-    <section>
-      <!-- Título principal (único h1) -->
-      <h1>Sobre o projeto</h1>
-      <!-- Parágrafo de introdução -->
-      <p>Esta página explica o propósito, o problema e as tecnologias usadas no OrbitAlert.</p>
-    </section>
+    <footer>
+      <p>OrbitAlert &copy; 2026 - Projeto acadêmico FIAP</p>
+    </footer>
 
-    <!-- Seção sobre o problema abordado -->
-    <section class="caixa">
-      <!-- Subtítulo da seção -->
-      <h2>O problema</h2>
-      <!-- Texto explicando o problema real -->
-      <p>O Brasil enfrenta queimadas, desmatamento, inundações e secas que muitas vezes são identificados tarde demais. A falta de alertas rápidos dificulta a resposta de municípios, produtores rurais e órgãos públicos.</p>
-    </section>
-
-    <!-- Seção sobre a motivação -->
-    <section class="caixa">
-      <!-- Subtítulo da seção -->
-      <h2>Motivação</h2>
-      <!-- Texto explicando por que o projeto foi criado -->
-      <p>Já existem dados abertos e gratuitos de satélites (NASA, ESA e INPE). A ideia do OrbitAlert é organizar esses dados em um só lugar e transformá-los em alertas fáceis de entender.</p>
-    </section>
-
-    <!-- Seção sobre as tecnologias usadas -->
-    <section class="caixa">
-      <!-- Subtítulo da seção -->
-      <h2>Tecnologias utilizadas</h2>
-      <!-- Lista das tecnologias do site -->
-      <ul>
-        <!-- Item: HTML -->
-        <li>HTML5 para a estrutura das páginas</li>
-        <!-- Item: CSS -->
-        <li>CSS3 para o visual e a responsividade</li>
-        <!-- Item: JavaScript -->
-        <li>JavaScript para o menu, o filtro de alertas e a validação do formulário</li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <!-- Texto do rodapé -->
-    <p>OrbitAlert &copy; 2026 - Projeto acadêmico FIAP</p>
-  </footer>
-
-  <!-- Script do menu hambúrguer -->
-  <script src="js/menu.js"></script>
-</body>
-<!-- Fim do HTML -->
+    <script src="js/menu.js"></script>
+  </body>
 </html>
