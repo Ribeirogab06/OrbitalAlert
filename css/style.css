@@ -290,6 +290,36 @@ th {
   margin-bottom: 8px;          /* Espaço abaixo da foto */
 }
 
+.integrante img {
+  width: 150px;          /* Mantenha o tamanho que você já configurou (exemplo: 150px) */
+  height: 150px;         /* Mantenha a mesma altura para garantir que seja um quadrado */
+  border-radius: 50%;    /* Deixa a foto redonda */
+  
+  /* ADICIONE ESSAS DUAS LINHAS ABAIXO: */
+  object-fit: cover;     /* CORRIGE A DISTORÇÃO: Corta as bordas sem amassar o rosto */
+  object-position: center; /* Garante que o rosto fique bem centralizado no círculo */
+}
+
+/* Força as fontes e links dentro dos blocos de integrantes a ficarem visíveis */
+.integrante h3 {
+  color: #111111 !important; /* Nome do integrante em preto/cinza escuro */
+}
+
+.integrante p {
+  color: #444444 !important; /* RM e Turma em cinza escuro */
+}
+
+.integrante p a {
+  color: #0066cc !important; /* Links do GitHub e LinkedIn em um azul bonito */
+  text-decoration: none;     /* Tira aquele sublinhado padrão dos links se quiser */
+}
+
+/* Efeito opcional para o link quando passar o mouse */
+.integrante p a:hover {
+  text-decoration: underline; /* O sublinhado volta só quando passa o mouse */
+  color: #004499 !important;  /* O azul fica ligeiramente mais escuro */
+}
+
 /* ---------------- FORMULÁRIOS (CONTATO) ---------------- */
 
 /* Rótulo (label) de cada campo do formulário */
