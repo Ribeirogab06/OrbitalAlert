@@ -52,8 +52,6 @@ Substitua pelos dados reais de cada integrante:
 
 
 ## Link do repositório do GitHub
-
-Substitua pelo link real do repositório público:
 `https://github.com/Ribeirogab06/OrbitalAlert.git`
 
 ## Contato
