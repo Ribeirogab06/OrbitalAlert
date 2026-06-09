@@ -1,0 +1,102 @@
+<!-- Define que este documento é HTML5 -->
+<!DOCTYPE html>
+<!-- Início do HTML em português -->
+<html lang="pt-br">
+<!-- Cabeçalho técnico -->
+<head>
+  <!-- Codificação de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba -->
+  <title>OrbitAlert - Contato</title>
+  <!-- Liga a folha de estilo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Corpo visível -->
+<body>
+
+  <!-- Cabeçalho com logo e menu -->
+  <header>
+    <div class="topo">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo OrbitAlert">
+        <span>OrbitAlert</span>
+      </div>
+      <!-- Botão do menu mobile -->
+      <button class="botao-menu" id="botaoMenu">&#9776;</button>
+      <!-- Navegação -->
+      <nav>
+        <ul id="menuLista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="monitoramento.html">Monitoramento</a></li>
+          <li><a href="alertas.html">Alertas</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <!-- Seção de título -->
+    <section>
+      <!-- Título principal (único h1) -->
+      <h1>Fale conosco</h1>
+      <!-- Parágrafo de instrução -->
+      <p>Preencha o formulário abaixo para enviar uma mensagem para a equipe.</p>
+    </section>
+
+    <!-- Seção com o formulário -->
+    <section class="caixa">
+      <!-- Formulário de contato (id usado pelo JavaScript de validação) -->
+      <form id="formContato">
+        <!-- Rótulo do campo nome -->
+        <label for="nome">Nome</label>
+        <!-- Campo de texto para o nome -->
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <!-- Rótulo do campo e-mail -->
+        <label for="email">E-mail</label>
+        <!-- Campo de texto para o e-mail -->
+        <input type="text" id="email" placeholder="Digite seu e-mail">
+
+        <!-- Rótulo do campo mensagem -->
+        <label for="texto">Mensagem</label>
+        <!-- Área de texto para a mensagem -->
+        <textarea id="texto" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+        <!-- Botão que envia o formulário -->
+        <button type="submit" class="botao">Enviar</button>
+
+        <!-- Parágrafo vazio onde o JavaScript mostra erro ou sucesso -->
+        <p id="mensagem" class="mensagem"></p>
+      </form>
+    </section>
+
+    <!-- Seção com outros contatos -->
+    <section class="caixa">
+      <!-- Subtítulo -->
+      <h2>Outras formas de contato</h2>
+      <!-- E-mail de contato (troque pelo real) -->
+      <p>E-mail: contato@orbitalert.com.br</p>
+      <!-- Repositório do projeto (troque pelo link real) -->
+      <p>GitHub do projeto: https://github.com/seu-usuario/orbitalert</p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>OrbitAlert &copy; 2026 - Projeto acadêmico FIAP</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script src="js/menu.js"></script>
+  <!-- Script que valida o formulário de contato -->
+  <script src="js/validacao.js"></script>
+</body>
+<!-- Fim do HTML -->
+</html>
