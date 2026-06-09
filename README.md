@@ -1,8 +1,8 @@
 # OrbitAlert
 
-## Título e Descrição
+## Descrição
 
-**OrbitAlert** é um sistema de monitoramento ambiental terrestre que utiliza dados abertos de satélites (NASA, ESA e INPE) para acompanhar riscos ambientais no Brasil — como queimadas, desmatamento, inundações e secas — e gerar alertas para municípios, produtores rurais e órgãos públicos. Este é um projeto acadêmico (site estático) desenvolvido na FIAP.
+**OrbitAlert** é um sistema de monitoramento ambiental terrestre que utiliza dados abertos de satélites (NASA, ESA e INPE) para acompanhar riscos ambientais no Brasil — como queimadas, desmatamento, inundações e secas — e gerar alertas para municípios, produtores rurais e órgãos públicos. Este é um projeto desenvolvido para a materia de Front end. Prof. Alexandre
 
 ## Tecnologias utilizadas
 
@@ -38,8 +38,6 @@ orbitalert/
 ```
 
 ## Autores e Créditos
-
-Substitua pelos dados reais de cada integrante:
 
 | Nome completo   | RM     | Turma  | GitHub                          | LinkedIn                                     |
 | --------------- | ------ | ------ | ------------------------------- | -------------------------------------------- |
