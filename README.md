@@ -47,6 +47,7 @@ Substitua pelos dados reais de cada integrante:
 | Tayna Jimenes   | 569337 | 1TDSPW  | https://github.com/TaynaJimenes | www.linkedin.com/in/tayna-jimenes/           |
 | Integrante 3    | 000000 | 1TDSX  | github.com/usuario3             | linkedin.com/in/usuario3                     |
 | Integrante 4    | 000000 | 1TDSX  | github.com/usuario4             | linkedin.com/in/usuario4                     |
+| Integrante 5   | 000000 | 1TDSX  | github.com/usuario3             | linkedin.com/in/usuario3                     |
 
 ## Link do repositório do GitHub
 
