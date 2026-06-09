@@ -1,0 +1,127 @@
+<!-- Define que este documento é HTML5 -->
+<!DOCTYPE html>
+<!-- Início do HTML em português -->
+<html lang="pt-br">
+<!-- Cabeçalho técnico -->
+<head>
+  <!-- Codificação de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba -->
+  <title>OrbitAlert - Alertas</title>
+  <!-- Liga a folha de estilo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Corpo visível -->
+<body>
+
+  <!-- Cabeçalho com logo e menu -->
+  <header>
+    <div class="topo">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo OrbitAlert">
+        <span>OrbitAlert</span>
+      </div>
+      <!-- Botão do menu mobile -->
+      <button class="botao-menu" id="botaoMenu">&#9776;</button>
+      <!-- Navegação -->
+      <nav>
+        <ul id="menuLista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="monitoramento.html">Monitoramento</a></li>
+          <li><a href="alertas.html">Alertas</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <!-- Seção de título -->
+    <section>
+      <!-- Título principal (único h1) -->
+      <h1>Alertas em órbita</h1>
+      <!-- Parágrafo de explicação da página -->
+      <p>Esta página mostra 6 alertas detectados por satélite. Use os botões abaixo para filtrar por nível de risco.</p>
+    </section>
+
+    <!-- Seção dos botões de filtro -->
+    <section class="filtros">
+      <!-- Botão que mostra TODOS os alertas (chama a função filtrar com "todos") -->
+      <button onclick="filtrar('todos')">Todos</button>
+      <!-- Botão que mostra apenas os alertas críticos -->
+      <button onclick="filtrar('critico')">Crítico</button>
+      <!-- Botão que mostra apenas os alertas moderados -->
+      <button onclick="filtrar('moderado')">Moderado</button>
+      <!-- Botão que mostra apenas os alertas baixos -->
+      <button onclick="filtrar('baixo')">Baixo</button>
+    </section>
+
+    <!-- Seção que contém os 6 cards de alerta -->
+    <section>
+
+      <!-- ALERTA CRÍTICO 1 (a classe "critico" é usada pelo filtro e pela cor) -->
+      <article class="alerta critico">
+        <!-- Etiqueta colorida indicando o nível de risco -->
+        <span class="etiqueta critico">CRÍTICO</span>
+        <!-- Título do alerta -->
+        <h3>Queimada ativa na Amazônia (PA)</h3>
+        <!-- Descrição do alerta -->
+        <p>Foco de calor intenso detectado por satélite. Risco alto de propagação.</p>
+      </article>
+
+      <!-- ALERTA CRÍTICO 2 -->
+      <article class="alerta critico">
+        <span class="etiqueta critico">CRÍTICO</span>
+        <h3>Inundação no Vale do Itajaí (SC)</h3>
+        <p>Nível dos rios acima do limite de segurança. Risco de transbordamento.</p>
+      </article>
+
+      <!-- ALERTA MODERADO 1 (classe "moderado") -->
+      <article class="alerta moderado">
+        <span class="etiqueta moderado">MODERADO</span>
+        <h3>Avanço de desmatamento no Cerrado (GO)</h3>
+        <p>Redução da cobertura vegetal observada nas últimas semanas.</p>
+      </article>
+
+      <!-- ALERTA MODERADO 2 -->
+      <article class="alerta moderado">
+        <span class="etiqueta moderado">MODERADO</span>
+        <h3>Início de seca no Sertão (PE)</h3>
+        <p>Umidade do solo em queda. Atenção para o abastecimento de água.</p>
+      </article>
+
+      <!-- ALERTA BAIXO 1 (classe "baixo") -->
+      <article class="alerta baixo">
+        <span class="etiqueta baixo">BAIXO</span>
+        <h3>Variação de temperatura no Sul (RS)</h3>
+        <p>Pequena anomalia térmica detectada. Apenas acompanhamento.</p>
+      </article>
+
+      <!-- ALERTA BAIXO 2 -->
+      <article class="alerta baixo">
+        <span class="etiqueta baixo">BAIXO</span>
+        <h3>Leve redução de umidade no Pantanal (MT)</h3>
+        <p>Condição dentro do esperado para a estação. Sem risco imediato.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>OrbitAlert &copy; 2026 - Projeto acadêmico FIAP</p>
+  </footer>
+
+  <!-- Script do menu hambúrguer -->
+  <script src="js/menu.js"></script>
+  <!-- Script do filtro de alertas (controla os botões acima) -->
+  <script src="js/alertas.js"></script>
+</body>
+<!-- Fim do HTML -->
+</html>
