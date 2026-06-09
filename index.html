@@ -1,39 +1,28 @@
-<!-- Define que este documento é HTML5 -->
 <!DOCTYPE html>
-<!-- Início do HTML; lang="pt-br" indica que o conteúdo está em português -->
 <html lang="pt-br">
-<!-- Cabeçalho técnico da página (não aparece na tela) -->
 <head>
-  <!-- Define a codificação de caracteres (acentos funcionam corretamente) -->
-  <meta charset="UTF-8">
-  <!-- Faz o site se adaptar à largura da tela (responsividade) -->
+<meta charset="UTF-8">
+  <!-- isso aqui faz o site ficar responsivo -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Título que aparece na aba do navegador -->
   <title>OrbitAlert - Início</title>
-  <!-- Liga esta página à folha de estilo externa (CSS separado) -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Corpo da página: tudo que aparece na tela fica aqui -->
 <body class="pagina-inicial">
-
-  <!-- Cabeçalho do site (topo com logo e menu) -->
   <header>
-    <!-- Caixa que organiza logo e menu lado a lado -->
+  
     <div class="topo">
-      <!-- Logotipo: imagem + nome do projeto -->
+      
       <div class="logo">
-        <!-- Imagem do logo (vem da pasta assets) -->
+        
         <img src="./img/pngtree-space-satellite-broadcast-png-image_14661549.png" alt="Logo OrbitAlert">
-        <!-- Nome do projeto em texto -->
+        
         <span>OrbitAlert</span>
       </div>
-      <!-- Botão hambúrguer que aparece só no celular -->
+     
       <button class="botao-menu" id="botaoMenu">&#9776;</button>
-      <!-- nav = área de navegação (menu) -->
+      
       <nav>
-        <!-- Lista com os links do menu (id usado pelo JavaScript) -->
         <ul id="menuLista">
-          <!-- Cada li é um item do menu com um link -->
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="monitoramento.html">Monitoramento</a></li>
@@ -46,40 +35,40 @@
     </div>
   </header>
 
-  <!-- main = conteúdo principal da página -->
+ 
   <main class="container">
-    <!-- Seção de apresentação (boas-vindas) -->
+    
     <section>
-      <!-- Título principal da página (apenas um h1 por página) -->
+      
       <h1 class="monitoramento-ambiental">Monitoramento Ambiental por Satélite</h1>
-      <!-- Parágrafo de apresentação do projeto -->
+      
       <p>O OrbitAlert é uma plataforma que usa dados abertos de satélites da NASA, ESA e INPE para monitorar riscos ambientais no Brasil, como queimadas, desmatamento, inundações e secas.</p>
-      <!-- Botão que leva o usuário para a página de alertas -->
+    
     </section>
 
-    <!-- Seção explicando o que o sistema faz -->
+    
     <section class="caixa">
-      <!-- Subtítulo da seção -->
+     
       <h2>O que o sistema faz</h2>
-      <!-- Parágrafo com a explicação -->
+     
       <p>A plataforma coleta dados de satélites, processa essas informações e gera alertas automáticos para municípios, produtores rurais e órgãos públicos, ajudando na tomada rápida de decisões.</p>
     </section>
 
-    <!-- Seção com os três tipos de risco monitorados -->
+   
     <section class="caixa">
-      <!-- Subtítulo da seção -->
+      
       <h2>Tipos de risco monitorados</h2>
-      <!-- Subtítulo de nível 3 para o risco crítico -->
+      
       <h3 class="titulo-critico">Risco crítico</h3>
-      <!-- Explicação do risco crítico -->
+     
       <p>Situações graves que exigem ação imediata, como queimadas ativas e inundações.</p>
-      <!-- Subtítulo de nível 3 para o risco moderado -->
+      
       <h3 class="titulo-moderado">Risco moderado</h3>
-      <!-- Explicação do risco moderado -->
+      
       <p>Situações que precisam de atenção, como avanço de desmatamento e início de seca.</p>
-      <!-- Subtítulo de nível 3 para o risco baixo -->
+     
       <h3 class="titulo-baixo">Risco baixo</h3>
-      <!-- Explicação do risco baixo -->
+     
       <p>Pequenas variações ambientais que devem ser apenas acompanhadas.</p>
 
       <div class="container-botao">
@@ -88,17 +77,9 @@
     
     </section>
   </main>
-
-  
-
-  <!-- Rodapé do site -->
   <footer>
-    <!-- Texto de direitos do projeto -->
     <p>OrbitAlert &copy; 2026 - Projeto acadêmico FIAP</p>
   </footer>
-
-  <!-- Liga o JavaScript do menu (fica no final para carregar depois do HTML) -->
   <script src="js/menu.js"></script>
 </body class="pagina-inicial">
-<!-- Fim do documento HTML -->
 </html>
