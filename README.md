@@ -53,12 +53,13 @@ orbitalert/
 `https://github.com/Ribeirogab06/OrbitalAlert.git`
 
 ## Imagens
-No celular
+ ## No celular
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dc2c974e-8b22-4ca1-b5ad-82b6f36cbaf1" width="320" alt="image" />
 </p> 
----------------------------------------------------------------------------------------------------------------------------
-No computador
+
+
+  ## No computador
 <img src="https://github.com/user-attachments/assets/622f8367-130e-4a86-8012-5d9433e217a1" width="100%" alt="Captura de tela 2026-06-09 184520" />
 
 
