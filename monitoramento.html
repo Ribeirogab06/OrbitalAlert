@@ -1,0 +1,129 @@
+<!-- Define que este documento é HTML5 -->
+<!DOCTYPE html>
+<!-- Início do HTML em português -->
+<html lang="pt-br">
+<!-- Cabeçalho técnico -->
+<head>
+  <!-- Codificação de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba -->
+  <title>OrbitAlert - Monitoramento</title>
+  <!-- Liga a folha de estilo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Corpo visível -->
+<body>
+
+  <!-- Cabeçalho com logo e menu -->
+  <header>
+    <div class="topo">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Logo OrbitAlert">
+        <span>OrbitAlert</span>
+      </div>
+      <!-- Botão do menu mobile -->
+      <button class="botao-menu" id="botaoMenu">&#9776;</button>
+      <!-- Navegação -->
+      <nav>
+        <ul id="menuLista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="monitoramento.html">Monitoramento</a></li>
+          <li><a href="alertas.html">Alertas</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <!-- Seção de título -->
+    <section>
+      <!-- Título principal (único h1) -->
+      <h1>Como o monitoramento funciona</h1>
+      <!-- Parágrafo de introdução da solução -->
+      <p>Esta é uma das páginas dedicadas à solução. Aqui mostramos, de forma simples, como o OrbitAlert transforma dados de satélite em alertas.</p>
+    </section>
+
+    <!-- Seção com as etapas do processo -->
+    <section class="caixa">
+      <!-- Subtítulo da seção -->
+      <h2>Etapas da solução</h2>
+      <!-- Etapa 1 -->
+      <h3>1. Coleta dos dados</h3>
+      <!-- Explicação da etapa 1 -->
+      <p>O sistema busca dados abertos de satélites da NASA, ESA e INPE sobre temperatura, fumaça, umidade e cobertura vegetal.</p>
+      <!-- Etapa 2 -->
+      <h3>2. Análise das informações</h3>
+      <!-- Explicação da etapa 2 -->
+      <p>Os dados são comparados com valores de referência para identificar situações fora do normal.</p>
+      <!-- Etapa 3 -->
+      <h3>3. Geração de alertas</h3>
+      <!-- Explicação da etapa 3 -->
+      <p>Quando um risco é identificado, o sistema gera um alerta classificado como crítico, moderado ou baixo.</p>
+      <!-- Etapa 4 -->
+      <h3>4. Aviso aos responsáveis</h3>
+      <!-- Explicação da etapa 4 -->
+      <p>O alerta fica disponível na página de Alertas para municípios, produtores rurais e órgãos públicos.</p>
+    </section>
+
+    <!-- Seção com uma tabela simples simulando os dados monitorados -->
+    <section class="caixa">
+      <!-- Subtítulo da seção -->
+      <h2>Exemplo de dados monitorados</h2>
+      <!-- Tabela simples de demonstração (dados de exemplo) -->
+      <table>
+        <!-- Cabeçalho da tabela -->
+        <thead>
+          <!-- Linha de títulos das colunas -->
+          <tr>
+            <!-- Coluna 1: região -->
+            <th>Região</th>
+            <!-- Coluna 2: tipo de dado -->
+            <th>Dado observado</th>
+            <!-- Coluna 3: situação -->
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <!-- Corpo da tabela com as linhas de dados -->
+        <tbody>
+          <!-- Linha de exemplo 1 -->
+          <tr>
+            <td>Amazônia (PA)</td>
+            <td>Foco de calor alto</td>
+            <td>Crítico</td>
+          </tr>
+          <!-- Linha de exemplo 2 -->
+          <tr>
+            <td>Cerrado (GO)</td>
+            <td>Umidade do solo baixa</td>
+            <td>Moderado</td>
+          </tr>
+          <!-- Linha de exemplo 3 -->
+          <tr>
+            <td>Sul (RS)</td>
+            <td>Variação de temperatura</td>
+            <td>Baixo</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Parágrafo com aviso de que os dados são exemplos -->
+      <p>Observação: estes são dados de exemplo, usados apenas para demonstrar o funcionamento.</p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>OrbitAlert &copy; 2026 - Projeto acadêmico FIAP</p>
+  </footer>
+
+  <!-- Script do menu -->
+  <script src="js/menu.js"></script>
+</body>
+<!-- Fim do HTML -->
+</html>
