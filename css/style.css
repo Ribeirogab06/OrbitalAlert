@@ -1,9 +1,4 @@
-/* ================================================================ */
-/* style.css  ->  Folha de estilo ÚNICA do site OrbitAlert            */
-/* Todo o visual fica aqui (CSS separado do HTML, sem CSS inline).     */
-/* ================================================================ */
-
-/* :root guarda as "variáveis de cor" usadas em todo o site (paleta) */
+/*Raiz das cores*/
 :root {
   --azul-espaco: #1a3a5c;     /* Cor principal (azul escuro = espaço/satélite) */
   --verde-terra: #2e8b57;     /* Cor de apoio (verde = meio ambiente/Terra) */
@@ -17,7 +12,7 @@
 
 }
 
-/* Cores específicas para os títulos de risco da Index */
+/* Cores específicas que eu quero */
 
 .titulo-critico {
   color: #ff4d4d; /* Vermelho vibrante para atenção imediata */
@@ -47,7 +42,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/universo.png'); /* Fundo com imagem + camada escura para contraste */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/universo.png');
   background-size: cover;          /* Faz a imagem cobrir toda a tela sem distorcer */
   background-position: center;     /* Centraliza a imagem */
   background-repeat: no-repeat;    /* Impede que a imagem fique se repetindo */
@@ -137,29 +132,39 @@ nav a {
 
 /* Título principal de cada página (h1) */
 h1 {
-  color: var(--azul-espaco);   /* Cor azul no título principal */
+  color: var(#fafafa);   /* Cor azul no título principal */
   font-size: 28px;             /* Tamanho grande para destaque */
   margin-bottom: 12px;         /* Espaço abaixo do título */
 }
 
 /* Subtítulos de seção (h2) */
 h2 {
-  color: var(--azul-espaco);   /* Mesma cor azul para manter hierarquia */
+  color: var(#fafafa);   /* Mesma cor azul para manter hierarquia */
   font-size: 22px;             /* Menor que o h1 */
   margin: 20px 0 10px 0;       /* Espaço acima e abaixo */
 }
 
 /* Subtítulos menores (h3) */
 h3 {
-  color: var(--texto);         /* Cor padrão de texto */
+  color: var(#fafafa);         /* Cor padrão de texto */
   font-size: 18px;             /* Menor que o h2 */
   margin-bottom: 6px;          /* Pequeno espaço abaixo */
 }
 
 /* Parágrafos comuns (p) */
 p {
+  color:#ffffff;
   margin-bottom: 12px;        /* Espaço abaixo de cada parágrafo */
-  color: var(--branco);         /* Cor padrão de texto */
+  color:#ffffff;         /* Cor padrão de texto */
+}
+
+/* Força os textos de dentro dos cards de alerta a ficarem escuros */
+.alerta h3 {
+  color: #111111 !important; /* Cor preta/cinza bem escura para o título do alerta */
+}
+
+.alerta p {
+  color: #444444 !important; /* Cor cinza escura para a descrição do alerta */
 }
 
 /* ---------------- BOTÕES ---------------- */
