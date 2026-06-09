@@ -44,6 +44,7 @@ Substitua pelos dados reais de cada integrante:
 | Nome completo   | RM     | Turma  | GitHub                          | LinkedIn                                     |
 | --------------- | ------ | ------ | ------------------------------- | -------------------------------------------- |
 | Gabriel Augusto | 573120 | 1TDSPW | https://github.com/Ribeirogab06 | www.linkedin.com/in/gabrielribeiro-fullstack |
+| Davi T Ribeiro  | 571336 | 1TDSPW | https://github.com/davitrindadee| https://www.linkedin.com/in/davi-trindade-b64a48378/|
 | Tayna Jimenes   | 569337 | 1TDSPW  | https://github.com/TaynaJimenes | www.linkedin.com/in/tayna-jimenes/           |
 | Integrante 3    | 000000 | 1TDSX  | github.com/usuario3             | linkedin.com/in/usuario3                     |
 | Integrante 4    | 000000 | 1TDSX  | github.com/usuario4             | linkedin.com/in/usuario4                     |
