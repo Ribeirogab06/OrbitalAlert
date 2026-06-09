@@ -14,6 +14,24 @@
   --texto: #222222;           /* Cor padrão do texto (quase preto) */
   --branco: #ffffff;          /* Branco usado em caixas e cabeçalho */
   --borda: #d6dde3;           /* Cinza usado nas bordas das caixas */
+
+}
+
+/* Cores específicas para os títulos de risco da Index */
+
+.titulo-critico {
+  color: #ff4d4d; /* Vermelho vibrante para atenção imediata */
+  font-weight: bold;
+}
+
+.titulo-moderado {
+  color: #ffaa00; /* Laranja/Amarelo para sinal de alerta */
+  font-weight: bold;
+}
+
+.titulo-baixo {
+  color: #2ed573; /* Verde para situação controlada/baixa */
+  font-weight: bold;
 }
 
 /* O seletor universal (*) zera margens/paddings padrão do navegador */
@@ -23,12 +41,21 @@
   box-sizing: border-box;     /* Faz a largura incluir borda e padding (evita "estouro") */
 }
 
-/* Estilo aplicado ao corpo (body) de todas as páginas */
 body {
-  font-family: Arial, Helvetica, sans-serif; /* Fonte legível e disponível em qualquer PC */
-  background-color: var(--fundo);            /* Aplica a cor de fundo da paleta */
-  color: var(--texto);                       /* Aplica a cor de texto da paleta */
-  line-height: 1.6;                          /* Espaço entre linhas para facilitar a leitura */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/universo.png'); /* Fundo com imagem + camada escura para contraste */
+  background-size: cover;          /* Faz a imagem cobrir toda a tela sem distorcer */
+  background-position: center;     /* Centraliza a imagem */
+  background-repeat: no-repeat;    /* Impede que a imagem fique se repetindo */
+  background-attachment: fixed;    /* Deixa o fundo fixo enquanto você rola a página */
+  color: #ffffff;                  /* Define a cor do texto como branco para dar contraste */
+  margin: 0;                   /* Remove margens padrão do navegador */
+  display: flex;               /* Ativa o modo Flexbox */
+  flex-direction: column;      /* Organiza os elementos (header, main, footer) em coluna */
+  min-height: 100vh;
+}
+
+main.container {
+  flex: 1;                     /* Faz o conteúdo principal esticar e ocupar o espaço restante */
 }
 
 /* Classe "container" centraliza o conteúdo e limita a largura */
@@ -307,11 +334,4 @@ footer {
   }
 }
 
-/* Configuração do background apenas para a página inicial */
-body.pagina-inicial {
-  background-image: url(../img/universo.png); /* Caminho para a sua imagem */
-  background-size: cover;          /* Faz a imagem cobrir toda a tela sem distorcer */
-  background-position: center;     /* Centraliza a imagem na tela */
-  background-repeat: no-repeat;    /* Impede que a imagem fique se repetindo */
-  background-attachment: fixed;    /* Opcional: deixa o fundo fixo enquanto você rola a página */
-}
+
