@@ -34,6 +34,11 @@
   font-weight: bold;
 }
 
+.monitoramento-ambiental {
+  color: #2e8b57 ; /* Verde para situação controlada/baixa */
+  font-weight: bold;
+}
+
 /* O seletor universal (*) zera margens/paddings padrão do navegador */
 * {
   margin: 0;                  /* Remove a margem padrão de todos os elementos */
@@ -159,17 +164,27 @@ p {
 
 /* ---------------- BOTÕES ---------------- */
 
-/* Estilo padrão de botão do site */
-.botao {
-  display: inline-block;       /* Permite dar tamanho e espaçamento ao link/botão */
-  background-color: var(--verde-terra); /* Fundo verde do botão */
-  color: var(--branco);        /* Texto branco no botão */
-  padding: 10px 16px;          /* Espaço interno (deixa o botão "clicável") */
-  border: none;                /* Remove borda padrão */
-  border-radius: 4px;          /* Cantos arredondados */
-  text-decoration: none;       /* Tira sublinhado quando o botão é um link */
-  font-size: 15px;             /* Tamanho do texto do botão */
-  cursor: pointer;             /* Mostra "mãozinha" ao passar o mouse */
+.container-botao {
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif; /* Fonte do botão */         
+  background-color: #2ed573; 
+  border: 1px solid #2ed573;                  /* Borda verde para delimitar a área */
+  border-radius: 8px;                         /* Cantos arredondados na caixa */
+  /* Espaçamentos */
+  padding: 20px;               /* Espaço interno para a área verde não esmagar o botão */
+  margin: 30px auto;           /* 30px de espaço acima/abaixo e auto para centralizar a caixa na tela */
+  
+  /* Tamanho da área */
+  width: 90%;                  /* Ocupa quase toda a largura da tela */
+  max-width: 200px;            /* Mas não passa de 400px para ficar elegante e proporcional ao botão */
+}
+
+
+.container-botao .botao {
+  text-decoration: none;                   
+
 }
 
 /* ---------------- PÁGINA DE ALERTAS (FILTRO + CARDS) ---------------- */
