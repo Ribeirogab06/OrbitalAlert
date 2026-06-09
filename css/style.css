@@ -126,16 +126,8 @@ h3 {
 
 /* Parágrafos comuns (p) */
 p {
-  margin-bottom: 12px;         /* Espaço abaixo de cada parágrafo */
-}
-
-/* Caixa branca reutilizável para agrupar conteúdo (card simples) */
-.caixa {
-  background-color: var(--branco); /* Fundo branco da caixa */
-  border: 1px solid var(--borda);  /* Borda cinza fina */
-  border-radius: 6px;              /* Cantos levemente arredondados */
-  padding: 18px;                   /* Espaço interno da caixa */
-  margin-bottom: 16px;             /* Espaço abaixo da caixa */
+  margin-bottom: 12px;        /* Espaço abaixo de cada parágrafo */
+  color: var(--branco);         /* Cor padrão de texto */
 }
 
 /* ---------------- BOTÕES ---------------- */
@@ -313,4 +305,13 @@ footer {
     flex-direction: column;    /* Coloca logo e menu um embaixo do outro */
     align-items: flex-start;   /* Alinha tudo à esquerda */
   }
+}
+
+/* Configuração do background apenas para a página inicial */
+body.pagina-inicial {
+  background-image: url(../img/universo.png); /* Caminho para a sua imagem */
+  background-size: cover;          /* Faz a imagem cobrir toda a tela sem distorcer */
+  background-position: center;     /* Centraliza a imagem na tela */
+  background-repeat: no-repeat;    /* Impede que a imagem fique se repetindo */
+  background-attachment: fixed;    /* Opcional: deixa o fundo fixo enquanto você rola a página */
 }
