@@ -1,6 +1,4 @@
-// ================================================================
 // alertas.js -> Filtra os cards de alerta por nível de risco
-// ================================================================
 
 // Função que recebe o nível escolhido ("todos", "critico", "moderado" ou "baixo")
 function filtrar(nivel) {
@@ -13,11 +11,11 @@ function filtrar(nivel) {
     if (nivel === "todos") {
       card.classList.remove("escondido");
     }
-    // Se o card TEM a classe do nível escolhido, mostra ele
+    // Se o card TEM a classe do nível escolhido mostra ele
     else if (card.classList.contains(nivel)) {
       card.classList.remove("escondido");
     }
-    // Caso contrário, esconde o card adicionando a classe "escondido"
+    // senao esconde o card adicionando a classe "escondido"
     else {
       card.classList.add("escondido");
     }
