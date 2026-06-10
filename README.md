@@ -44,8 +44,8 @@ orbitalert/
 | Gabriel Augusto     | 573120 | 1TDSPW  | https://github.com/Ribeirogab06         | www.linkedin.com/in/gabrielribeiro-fullstack         |
 | Tayna Jimenes       | 569337 | 1TDSPW  | https://github.com/TaynaJimenes         | www.linkedin.com/in/tayna-jimenes/                   |
 | Davi T Ribeiro      | 571336 | 1TDSPW  | https://github.com/davitrindadee        | www.linkedin.com/in/davi-trindade-b64a48378/         |
-| Nycolas Melo        | 573052 | 1TDSPW  | https://github.com/Nycolas10072006)     | www.linkedin.com/in/nycolas-melo-escobar-983376391/) |
-| Rodrigo Banharelli  | 570539 | 1TDSPW  | https://github.com/RodrigoBanharelli)   | www.linkedin.com/in/rodrigo-banharelli/)             |
+| Nycolas Melo        | 573052 | 1TDSPW  | https://github.com/Nycolas10072006      | www.linkedin.com/in/nycolas-melo-escobar-983376391/  |
+| Rodrigo Banharelli  | 570539 | 1TDSPW  | https://github.com/RodrigoBanharelli    | www.linkedin.com/in/rodrigo-banharelli/              |
 
 
 ## Link do repositório do GitHub
