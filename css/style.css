@@ -1,0 +1,387 @@
+/*Raiz das cores*/
+:root {
+  --azul-espaco: #1a3a5c;     /* Cor principal (azul escuro = espaço/satélite) */
+  --verde-terra: #2e8b57;     /* Cor de apoio (verde = meio ambiente/Terra) */
+  --critico: #c0392b;         /* Vermelho = alerta de risco CRÍTICO */
+  --moderado: #e67e22;        /* Laranja = alerta de risco MODERADO */
+  --baixo: #27ae60;           /* Verde = alerta de risco BAIXO */
+  --fundo: #f4f6f8;           /* Cor de fundo geral das páginas (cinza claro) */
+  --texto: #222222;           /* Cor padrão do texto (quase preto) */
+  --branco: #ffffff;          /* Branco usado em caixas e cabeçalho */
+  --borda: #d6dde3;           /* Cinza usado nas bordas das caixas */
+
+}
+
+/* Cores específicas que eu quero */
+
+.titulo-critico {
+  color: #ff4d4d; /* Vermelho vibrante para atenção imediata */
+  font-weight: bold;
+}
+
+.titulo-moderado {
+  color: #ffaa00; /* Laranja/Amarelo para sinal de alerta */
+  font-weight: bold;
+}
+
+.titulo-baixo {
+  color: #2ed573; /* Verde para situação controlada/baixa */
+  font-weight: bold;
+}
+
+.monitoramento-ambiental {
+  color: #2e8b57 ; /* Verde para situação controlada/baixa */
+  font-weight: bold;
+}
+
+/* O seletor universal (*) zera margens/paddings padrão do navegador */
+* {
+  margin: 0;                  /* Remove a margem padrão de todos os elementos */
+  padding: 0;                 /* Remove o preenchimento padrão de todos os elementos */
+  box-sizing: border-box;     /* Faz a largura incluir borda e padding (evita "estouro") */
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/universo.png');
+  background-size: cover;          /* Faz a imagem cobrir toda a tela sem distorcer */
+  background-position: center;     /* Centraliza a imagem */
+  background-repeat: no-repeat;    /* Impede que a imagem fique se repetindo */
+  background-attachment: fixed;    /* Deixa o fundo fixo enquanto você rola a página */
+  color: #ffffff;                  /* Define a cor do texto como branco para dar contraste */
+  margin: 0;                   /* Remove margens padrão do navegador */
+  display: flex;               /* Ativa o modo Flexbox */
+  flex-direction: column;      /* Organiza os elementos (header, main, footer) em coluna */
+  min-height: 100vh;
+}
+
+main.container {
+  flex: 1;                     /* Faz o conteúdo principal esticar e ocupar o espaço restante */
+}
+
+/* Classe "container" centraliza o conteúdo e limita a largura */
+.container {
+  width: 90%;                 /* Ocupa 90% da largura da tela */
+  max-width: 1000px;          /* Mas nunca passa de 1000px (boa leitura no desktop) */
+  margin: 0 auto;             /* Centraliza horizontalmente o bloco */
+  padding: 20px 0;            /* Dá um respiro em cima e embaixo */
+}
+
+/* ---------------- CABEÇALHO E MENU DE NAVEGAÇÃO ---------------- */
+
+/* Estilo do cabeçalho fixo no topo de cada página */
+header {
+  background-color: var(--azul-espaco); /* Fundo azul escuro do cabeçalho */
+  color: var(--branco);                 /* Texto branco dentro do cabeçalho */
+  padding: 12px 0;                      /* Espaço interno em cima e embaixo */
+}
+
+/* Caixa interna do cabeçalho que organiza logo + menu lado a lado */
+.topo {
+  width: 90%;                  /* Mesma largura do container */
+  max-width: 1000px;           /* Mesmo limite do container */
+  margin: 0 auto;              /* Centraliza */
+  display: flex;               /* Coloca os filhos (logo e menu) em linha */
+  justify-content: space-between; /* Logo na esquerda, menu na direita */
+  align-items: center;         /* Alinha verticalmente os itens no centro */
+}
+
+/* Caixa do logotipo (imagem + nome do projeto) */
+.logo {
+  display: flex;               /* Imagem e texto lado a lado */
+  align-items: center;         /* Alinha verticalmente */
+  gap: 10px;                   /* Espaço entre a imagem e o texto */
+}
+
+/* Tamanho da imagem do logotipo */
+.logo img {
+  width: 40px;                 /* Largura fixa do logo */
+  height: 40px;                /* Altura fixa do logo */
+}
+
+/* Texto "OrbitAlert" ao lado do logo */
+.logo span {
+  font-size: 20px;             /* Tamanho da letra do nome */
+  font-weight: bold;           /* Deixa o nome em negrito */
+}
+
+/* A lista do menu (ul) que contém os links */
+nav ul {
+  list-style: none;            /* Remove as "bolinhas" da lista */
+  display: flex;               /* Coloca os links em linha (horizontal) */
+  gap: 18px;                   /* Espaço entre cada link do menu */
+}
+
+/* Cada link do menu (a) */
+nav a {
+  color: var(--branco);        /* Cor branca para os links do menu */
+  text-decoration: none;       /* Remove o sublinhado padrão dos links */
+  font-size: 15px;             /* Tamanho do texto do link */
+}
+
+/* Botão "hambúrguer" que só aparece no celular (escondido no desktop) */
+.botao-menu {
+  display: none;               /* No desktop ele fica escondido */
+  background: none;            /* Sem cor de fundo */
+  border: none;                /* Sem borda */
+  color: var(--branco);        /* Três tracinhos brancos */
+  font-size: 26px;             /* Tamanho do ícone de menu */
+  cursor: pointer;             /* Mostra "mãozinha" ao passar o mouse */
+}
+
+/* ---------------- CONTEÚDO PRINCIPAL E TÍTULOS ---------------- */
+
+/* Título principal de cada página (h1) */
+h1 {
+  color: var(#fafafa);   /* Cor azul no título principal */
+  font-size: 28px;             /* Tamanho grande para destaque */
+  margin-bottom: 12px;         /* Espaço abaixo do título */
+}
+
+/* Subtítulos de seção (h2) */
+h2 {
+  color: var(#fafafa);   /* Mesma cor azul para manter hierarquia */
+  font-size: 22px;             /* Menor que o h1 */
+  margin: 20px 0 10px 0;       /* Espaço acima e abaixo */
+}
+
+/* Subtítulos menores (h3) */
+h3 {
+  color: var(#fafafa);         /* Cor padrão de texto */
+  font-size: 18px;             /* Menor que o h2 */
+  margin-bottom: 6px;          /* Pequeno espaço abaixo */
+}
+
+/* Parágrafos comuns (p) */
+p {
+  color:#ffffff;
+  margin-bottom: 12px;        /* Espaço abaixo de cada parágrafo */
+  color:#ffffff;         /* Cor padrão de texto */
+}
+
+/* Força os textos de dentro dos cards de alerta a ficarem escuros */
+.alerta h3 {
+  color: #111111 !important; /* Cor preta/cinza bem escura para o título do alerta */
+}
+
+.alerta p {
+  color: #444444 !important; /* Cor cinza escura para a descrição do alerta */
+}
+
+/* ---------------- BOTÕES ---------------- */
+
+.container-botao {
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif; /* Fonte do botão */         
+  background-color: #2ed573; 
+  border: 1px solid #2ed573;                  /* Borda verde para delimitar a área */
+  border-radius: 8px;                         /* Cantos arredondados na caixa */
+  /* Espaçamentos */
+  padding: 20px;               /* Espaço interno para a área verde não esmagar o botão */
+  margin: 30px auto;           /* 30px de espaço acima/abaixo e auto para centralizar a caixa na tela */
+  
+  /* Tamanho da área */
+  width: 90%;                  /* Ocupa quase toda a largura da tela */
+  max-width: 200px;            /* Mas não passa de 400px para ficar elegante e proporcional ao botão */
+}
+
+
+.container-botao .botao {
+  text-decoration: none;                   
+
+}
+
+/* ---------------- PÁGINA DE ALERTAS (FILTRO + CARDS) ---------------- */
+
+/* Linha com os botões de filtro dos alertas */
+.filtros {
+  margin-bottom: 16px;         /* Espaço abaixo da linha de filtros */
+}
+
+/* Botão de filtro individual */
+.filtros button {
+  background-color: var(--azul-espaco); /* Fundo azul */
+  color: var(--branco);        /* Texto branco */
+  border: none;                /* Sem borda */
+  padding: 8px 14px;           /* Espaço interno */
+  margin-right: 6px;           /* Espaço entre os botões */
+  border-radius: 4px;          /* Cantos arredondados */
+  cursor: pointer;             /* Mãozinha ao passar o mouse */
+  font-size: 14px;             /* Tamanho do texto do botão */
+}
+
+/* Cada cartão (card) de alerta */
+.alerta {
+  background-color: var(--branco); /* Fundo branco do card */
+  border-left: 6px solid var(--borda); /* Faixa colorida na esquerda (cor varia pelo risco) */
+  border-radius: 4px;          /* Cantos arredondados */
+  padding: 14px;               /* Espaço interno */
+  margin-bottom: 12px;         /* Espaço abaixo de cada card */
+}
+
+/* Quando o card tiver a classe "critico", a faixa fica vermelha */
+.alerta.critico { border-left-color: var(--critico); }
+/* Quando o card tiver a classe "moderado", a faixa fica laranja */
+.alerta.moderado { border-left-color: var(--moderado); }
+/* Quando o card tiver a classe "baixo", a faixa fica verde */
+.alerta.baixo { border-left-color: var(--baixo); }
+
+/* Etiqueta de texto que mostra o nível de risco dentro do card */
+.etiqueta {
+  display: inline-block;       /* Permite dar padding/cor de fundo */
+  color: var(--branco);        /* Texto branco na etiqueta */
+  font-size: 12px;             /* Texto pequeno */
+  padding: 2px 8px;            /* Espaço interno da etiqueta */
+  border-radius: 3px;          /* Cantos arredondados */
+  margin-bottom: 6px;          /* Espaço abaixo da etiqueta */
+}
+
+/* Cor da etiqueta para cada nível de risco */
+.etiqueta.critico { background-color: var(--critico); }  /* Etiqueta vermelha */
+.etiqueta.moderado { background-color: var(--moderado); } /* Etiqueta laranja */
+.etiqueta.baixo { background-color: var(--baixo); }      /* Etiqueta verde */
+
+/* Regra usada pelo JavaScript para esconder cards filtrados */
+.escondido {
+  display: none;               /* Tira o elemento da tela quando ganha esta classe */
+}
+
+/* ---------------- TABELA SIMPLES ---------------- */
+
+/* Estilo da tabela usada na página de monitoramento */
+table {
+  width: 100%;                 /* Tabela ocupa toda a largura da caixa */
+  border-collapse: collapse;   /* Junta as bordas das células em uma só linha */
+  margin-bottom: 12px;         /* Espaço abaixo da tabela */
+}
+
+/* Estilo das células de cabeçalho (th) e de dados (td) */
+th, td {
+  border: 1px solid var(--borda); /* Borda cinza fina em cada célula */
+  padding: 8px;                /* Espaço interno das células */
+  text-align: left;            /* Alinha o texto à esquerda */
+  font-size: 14px;             /* Tamanho do texto da tabela */
+}
+
+/* Cor de fundo só para a linha de cabeçalho da tabela */
+th {
+  background-color: var(--azul-espaco); /* Fundo azul no cabeçalho */
+  color: var(--branco);        /* Texto branco no cabeçalho */
+}
+
+/* ---------------- INTEGRANTES (EQUIPE) ---------------- */
+
+/* Caixa de cada integrante da equipe */
+.integrante {
+  background-color: var(--branco); /* Fundo branco */
+  border: 1px solid var(--borda);  /* Borda cinza */
+  border-radius: 6px;              /* Cantos arredondados */
+  padding: 16px;                   /* Espaço interno */
+  margin-bottom: 16px;             /* Espaço abaixo */
+  text-align: center;              /* Centraliza foto e textos */
+}
+
+/* Foto (avatar) do integrante */
+.integrante img {
+  width: 100px;                /* Largura da foto */
+  height: 100px;               /* Altura da foto */
+  border-radius: 50%;          /* Deixa a foto redonda */
+  margin-bottom: 8px;          /* Espaço abaixo da foto */
+}
+
+.integrante img {
+  width: 150px;          /* Mantenha o tamanho que você já configurou (exemplo: 150px) */
+  height: 150px;         /* Mantenha a mesma altura para garantir que seja um quadrado */
+  border-radius: 50%;    /* Deixa a foto redonda */
+  
+  /* ADICIONE ESSAS DUAS LINHAS ABAIXO: */
+  object-fit: cover;     /* CORRIGE A DISTORÇÃO: Corta as bordas sem amassar o rosto */
+  object-position: center; /* Garante que o rosto fique bem centralizado no círculo */
+}
+
+/* Força as fontes e links dentro dos blocos de integrantes a ficarem visíveis */
+.integrante h3 {
+  color: #111111 !important; /* Nome do integrante em preto/cinza escuro */
+}
+
+.integrante p {
+  color: #444444 !important; /* RM e Turma em cinza escuro */
+}
+
+.integrante p a {
+  color: #0066cc !important; /* Links do GitHub e LinkedIn em um azul bonito */
+  text-decoration: none;     /* Tira aquele sublinhado padrão dos links se quiser */
+}
+
+/* Efeito opcional para o link quando passar o mouse */
+.integrante p a:hover {
+  text-decoration: underline; /* O sublinhado volta só quando passa o mouse */
+  color: #004499 !important;  /* O azul fica ligeiramente mais escuro */
+}
+
+/* ---------------- FORMULÁRIOS (CONTATO) ---------------- */
+
+/* Rótulo (label) de cada campo do formulário */
+label {
+  display: block;              /* Cada rótulo fica em sua própria linha */
+  margin-bottom: 4px;          /* Pequeno espaço abaixo do rótulo */
+  font-weight: bold;           /* Deixa o rótulo em negrito */
+}
+
+/* Campos de texto e área de mensagem */
+input, textarea {
+  width: 100%;                 /* Campo ocupa toda a largura disponível */
+  padding: 10px;               /* Espaço interno do campo */
+  margin-bottom: 12px;         /* Espaço abaixo de cada campo */
+  border: 1px solid var(--borda); /* Borda cinza fina */
+  border-radius: 4px;          /* Cantos arredondados */
+  font-size: 15px;             /* Tamanho do texto digitado */
+  font-family: Arial, Helvetica, sans-serif; /* Mesma fonte do site */
+}
+
+/* Mensagem de erro/sucesso exibida pelo JavaScript do formulário */
+.mensagem {
+  margin-top: 10px;            /* Espaço acima da mensagem */
+  font-weight: bold;           /* Texto em negrito */
+}
+
+/* ---------------- RODAPÉ ---------------- */
+
+/* Estilo do rodapé de todas as páginas */
+footer {
+  background-color: var(--azul-espaco); /* Fundo azul escuro igual ao topo */
+  color: var(--branco);        /* Texto branco */
+  text-align: center;          /* Centraliza o texto do rodapé */
+  padding: 16px 0;             /* Espaço interno em cima e embaixo */
+  margin-top: 20px;            /* Espaço acima do rodapé */
+  font-size: 14px;             /* Texto um pouco menor */
+}
+
+/* ---------------- RESPONSIVIDADE (CELULAR/TABLET) ---------------- */
+
+/* Quando a tela for de até 768px (tablet/celular), aplica estas regras */
+@media (max-width: 768px) {
+  /* Mostra o botão hambúrguer no celular */
+  .botao-menu {
+    display: block;            /* Botão de menu passa a aparecer */
+  }
+  /* Esconde o menu por padrão no celular (será aberto pelo JavaScript) */
+  nav ul {
+    display: none;             /* Menu fica escondido até clicar no hambúrguer */
+    flex-direction: column;    /* Quando abrir, os links ficam um embaixo do outro */
+    width: 100%;               /* Menu ocupa toda a largura */
+    margin-top: 10px;          /* Espaço acima do menu aberto */
+  }
+  /* Classe adicionada pelo JavaScript para MOSTRAR o menu no celular */
+  nav ul.aberto {
+    display: flex;             /* Faz o menu reaparecer quando estiver "aberto" */
+  }
+  /* No celular o topo passa a empilhar logo e menu */
+  .topo {
+    flex-direction: column;    /* Coloca logo e menu um embaixo do outro */
+    align-items: flex-start;   /* Alinha tudo à esquerda */
+  }
+}
+
+
